@@ -14,6 +14,7 @@ app = {
     'modules': ['shaman'],
     'default_renderer': 'json',
     'guess_content_type_from_ext': False,
+    'static_root': '%(confdir)s/../public',
     'template_path': '%(confdir)s/../shaman/templates',
     'hooks': [
         TransactionHook(
@@ -63,15 +64,13 @@ sqlalchemy_w = {
     'echo':          True,
     'echo_pool':     True,
     'pool_recycle':  3600,
-    'encoding':      'utf-8'
 }
 
 sqlalchemy_ro = {
-    'url': 'sqlite:///dev.db',
+    'url': 'sqlite:///dev.db', 
     'echo':          True,
     'echo_pool':     True,
     'pool_recycle':  3600,
-    'encoding':      'utf-8'
 }
 
 # Basic HTTP Auth credentials

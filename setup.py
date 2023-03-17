@@ -16,7 +16,7 @@ setup(
     install_requires=[
         "pecan",
         "sqlalchemy",
-        "psycopg2",
+        "psycopg2-binary",
         "pecan-notario",
         "requests",
         "jinja2",

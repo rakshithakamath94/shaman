@@ -1,4 +1,4 @@
-psycopg2
+psycopg2-binary
 gunicorn
 pecan
 sqlalchemy
@@ -9,3 +9,5 @@ requests
 jinja2
 pika
 enum34
+cherrypy
+backslash
